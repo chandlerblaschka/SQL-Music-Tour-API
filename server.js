@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
     })
 })
 
+// CONTROLLERS 
+const bandsController = require('./controllers/bands_controller')
+app.use('/bands', bandsController)
+
 // LISTEN where we tell our app what port to listen for connections on
 app.listen(process.env.PORT, () => {
     console.log(`🎸 Rockin' on port: ${process.env.PORT}`)
