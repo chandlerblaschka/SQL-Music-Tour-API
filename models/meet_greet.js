@@ -15,10 +15,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   meet_greet.init({
     id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
-      primaryKey: true,
-      type: DataTypes.INTEGER
+      primaryKey: true
+      
     },
     event_id: {
       type: DataTypes.INTEGER,

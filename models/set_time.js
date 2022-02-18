@@ -15,10 +15,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   set_time.init({
     id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
-      primaryKey: true,
-      type: DataTypes.INTEGER
+      primaryKey: true
+      
     },
     set_time_id: {
       type: DataTypes.INTEGER,
